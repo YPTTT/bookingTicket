@@ -7,6 +7,7 @@ import promotionPage from '../components/promotionPage'
 import adsPage from '../components/adsPage'
 import aboutPage from '../components/aboutPage'
 import loginPage from '../components/loginPage'
+import adminHome from '../components/admin/adminHome'
 
 Vue.use(VueRouter)
 const routes = [
@@ -16,7 +17,8 @@ const routes = [
     {path: '/adsPage', component: adsPage},
     {path: '/aboutPage', component: aboutPage},
     {path: '/loginPage', component: loginPage},
-    {path: '/loginSuccess', redirect: '/'}
+    {path: '/loginSuccess', redirect: '/'},
+    {path: '/adminHome', component: adminHome}
 ]
 
 const router = new VueRouter({
